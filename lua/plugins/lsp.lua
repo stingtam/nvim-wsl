@@ -91,6 +91,13 @@ return {
                 },
             },
         }
+        require('lspconfig').clangd.setup({
+          cmd = {
+            "clangd",
+            "--query-driver=*arm-noe-ebi*",
+          },
+          filetypes = {"c", "cpp", "objc", "objcpp", "cuda", "proto" },
+        })
         -- require'lspconfig'.pyright.setup{
         --     on_attach = on_attach
         -- }

@@ -24,7 +24,7 @@ map("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 -- Terminal
 map('n', "<leader>t", ":sp | terminal<CR>", opts)
 map('n', "<leader>vt", ":vsp | terminal<CR>", opts)
--- map('t', "<Esc>", "<C-\\><C-n>", opts)
+map('t', "<Esc>", "<C-\\><C-n>", opts)
 
 -- Split window
 map("n", "<leader>v", ":vsp<CR>", opts)

@@ -5,7 +5,7 @@ vim.g.maplocalleader = " "
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-map("i", "jk", "<esc>", opts)
+map("i", "kj", "<esc>", opts)
 vim.keymap.set({"i", "n", "v", "t"}, "<C-q>", "<ESC><cmd>:q!<Enter>", {})
 
 -- Keybinds to make split navigation easier.
